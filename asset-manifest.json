@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/mi-portafolio/static/css/main.8f70d8f1.chunk.css",
-    "main.js": "/mi-portafolio/static/js/main.ac4b4750.chunk.js",
-    "main.js.map": "/mi-portafolio/static/js/main.ac4b4750.chunk.js.map",
+    "main.css": "/mi-portafolio/static/css/main.34a80a00.chunk.css",
+    "main.js": "/mi-portafolio/static/js/main.775ac47e.chunk.js",
+    "main.js.map": "/mi-portafolio/static/js/main.775ac47e.chunk.js.map",
     "runtime-main.js": "/mi-portafolio/static/js/runtime-main.ffbd0a72.js",
     "runtime-main.js.map": "/mi-portafolio/static/js/runtime-main.ffbd0a72.js.map",
     "static/css/2.acd75131.chunk.css": "/mi-portafolio/static/css/2.acd75131.chunk.css",
-    "static/js/2.7498e829.chunk.js": "/mi-portafolio/static/js/2.7498e829.chunk.js",
-    "static/js/2.7498e829.chunk.js.map": "/mi-portafolio/static/js/2.7498e829.chunk.js.map",
+    "static/js/2.b0b8af7f.chunk.js": "/mi-portafolio/static/js/2.b0b8af7f.chunk.js",
+    "static/js/2.b0b8af7f.chunk.js.map": "/mi-portafolio/static/js/2.b0b8af7f.chunk.js.map",
     "index.html": "/mi-portafolio/index.html",
     "static/css/2.acd75131.chunk.css.map": "/mi-portafolio/static/css/2.acd75131.chunk.css.map",
-    "static/css/main.8f70d8f1.chunk.css.map": "/mi-portafolio/static/css/main.8f70d8f1.chunk.css.map",
-    "static/js/2.7498e829.chunk.js.LICENSE.txt": "/mi-portafolio/static/js/2.7498e829.chunk.js.LICENSE.txt"
+    "static/css/main.34a80a00.chunk.css.map": "/mi-portafolio/static/css/main.34a80a00.chunk.css.map",
+    "static/js/2.b0b8af7f.chunk.js.LICENSE.txt": "/mi-portafolio/static/js/2.b0b8af7f.chunk.js.LICENSE.txt",
+    "static/media/alpina.dc0700ee.jpg": "/mi-portafolio/static/media/alpina.dc0700ee.jpg",
+    "static/media/center.b0eec7cc.jpg": "/mi-portafolio/static/media/center.b0eec7cc.jpg",
+    "static/media/gato.2a4a1c01.png": "/mi-portafolio/static/media/gato.2a4a1c01.png",
+    "static/media/jobs.9da2ebed.jpg": "/mi-portafolio/static/media/jobs.9da2ebed.jpg",
+    "static/media/js.e70043fc.png": "/mi-portafolio/static/media/js.e70043fc.png",
+    "static/media/logo.c309f388.png": "/mi-portafolio/static/media/logo.c309f388.png",
+    "static/media/mifoto.7f4166ed.jpg": "/mi-portafolio/static/media/mifoto.7f4166ed.jpg",
+    "static/media/perro.3b86c3a6.png": "/mi-portafolio/static/media/perro.3b86c3a6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ffbd0a72.js",
     "static/css/2.acd75131.chunk.css",
-    "static/js/2.7498e829.chunk.js",
-    "static/css/main.8f70d8f1.chunk.css",
-    "static/js/main.ac4b4750.chunk.js"
+    "static/js/2.b0b8af7f.chunk.js",
+    "static/css/main.34a80a00.chunk.css",
+    "static/js/main.775ac47e.chunk.js"
   ]
 }
