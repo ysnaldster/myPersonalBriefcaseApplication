@@ -19,9 +19,6 @@ const StyledMainDescriptionContainer = styled.div`
       top: 30px;
       padding: 80px 0px;
   }
-  @media (min-width: 1300px){
-      margin: 0px 125px;
-  }
 `
 
 const StyledImgProjects = styled.img`
@@ -95,9 +92,20 @@ const StyledMainDescriptionP = styled.p`
       padding-top: 20px;
       font-size: 24px; 
   }
+  @media (min-width: 1600px){
+      text-align: end;
+  }
 `
 
+// Desktop
 
+
+const StyledProjectMainImg = styled.img`
+    @media (min-width: 1600px){
+        width: 100%;
+        height: 800px;
+    }
+` 
 const ProyectsPerfomance = ({ title, description }) => {
 
     const dispatch = useDispatch();
@@ -162,11 +170,10 @@ const ProyectsPerfomance = ({ title, description }) => {
                 })
             }
             {/* Desktop */}
-            <StyledContainerDivProject className='d-none d-xl-block'>
+            <div className='d-none d-xl-block'>
                 {
-                    proyects !== undefined && <StyledContainerProjectOneDesktop>
-                        {/* <p>{proyects[1].title}</p> */}
-                        <StyledCardDesktopMainProject>
+                    proyects !== undefined && <div style = {{display: 'flex', justifyContent: 'center', marginBottom: '56px'}}>
+                        <StyledCardMainProject style = {{position: 'absolute', left: '72px', right: '671px', width: '575px', height: '388px'}}>
                             <Card.Body>
                                 <Card.Title>{proyects[1].title}</Card.Title>
                                 <Card.Text>
@@ -174,11 +181,40 @@ const ProyectsPerfomance = ({ title, description }) => {
                                 </Card.Text>
                                 <Button variant="primary" onClick={() => { handleClickProyect(proyects[1]) }}>Go somewhere</Button>
                             </Card.Body>
-                        </StyledCardDesktopMainProject>
-                        <img src={proyects[1].imgDesktop} alt='project_image' className='d-none d-md-flex' width='1222px' height='540px' />
-                    </StyledContainerProjectOneDesktop>
+                        </StyledCardMainProject>
+                        <StyledProjectMainImg src={proyects[1].imgDesktop} alt='project_image' className='d-none d-md-flex' width = '1222px' height = '540px' style = {{margin: '0px 72px 0px 96px'}}/>
+                    </div>
                 }
                 {
+                    proyects !== undefined && 
+                    <div style = {{display: 'flex', justifyContent: 'center',marginBottom: '56px' }}>
+                        <div style = {{marginLeft: '96px'}}>
+                            <StyledCardOne>
+                                <Card.Body>
+                                    <Card.Title>{proyects[0].title}</Card.Title>
+                                    <Card.Text>
+                                        {proyects[0].description}
+                                    </Card.Text>
+                                    <Button variant="primary" onClick={() => { handleClickProyect(proyects[0]) }}>Go somewhere</Button>
+                                </Card.Body>
+                            </StyledCardOne>
+                            <StyledImgDesktop src={proyects[0].imgDesktop} alt='project_image' className='d-none d-md-flex'/>
+                        </div>
+                        <div style = {{paddingLeft: '24px', marginRight: '72px'}}>
+                            <StyledCardTwo>
+                                <Card.Body>
+                                    <Card.Title>{proyects[2].title}</Card.Title>
+                                    <Card.Text>
+                                        {proyects[2].description}
+                                    </Card.Text>
+                                    <Button variant="primary" onClick={() => { handleClickProyect(proyects[2]) }}>Go somewhere</Button>
+                                </Card.Body>
+                            </StyledCardTwo>
+                            <StyledImgDesktop src={proyects[2].imgDesktop} alt='project_image' className='d-none d-md-flex'/>
+                        </div>
+                    </div>
+                }
+                {/* {
                     proyects !== undefined &&
                     <StyledContainersProjectsSecondaryDesktop>
                         {
@@ -200,36 +236,117 @@ const ProyectsPerfomance = ({ title, description }) => {
                             })
                         }
                     </StyledContainersProjectsSecondaryDesktop>
-                }
-            </StyledContainerDivProject>
+                } */}
+            </div>
         </div>
     )
 }
 
 export default ProyectsPerfomance
 
-const StyledImgProjectsDesktop = styled.img`
+// position: 'absolute', left: '72px', right: '671px', width: '511px'
+
+const StyledCardMainProject = styled(Card)`
+    margin-top: 500px;
+    @media (max-width: 1280px){
+        margin-top: 100px;
+    }
+    @media (min-width: 1400px){
+        margin-top: 100px;
+    }
+    @media (min-width: 1600px){
+        margin-top: 300px;
+    }
+`
+const StyledCardOne = styled(Card)`
+    position: absolute; 
+    left: 72px;
+    right: 671px;
+    width: 511px;
+    height: 316px;
+    margin-top: 120px;
+`
+// width: '511px', position: 'absolute', left: '750px'
+const StyledCardTwo = styled(Card)`
+    width: 511px;
+    position: absolute;
+    height: 316px;
+    /* left: 750px; */
+    margin-top: 120px;
+    @media (max-width: 1280px){
+        left: 650px; 
+    }
+    @media (min-width: 1400px){
+        left: 750px;
+    }
+    @media (min-width: 1600px){
+        left: 945px !important;
+    }
+`
+
+const StyledImgDesktop = styled.img`
+    @media (max-width: 1280px){
+        width: 550px;
+    }
     width: 599px; 
     height: 464px;
-    margin: 0px 12px;
+    @media (min-width: 1600px){
+        width: 836px;
+    }
+`
+
+
+
+
+
+
+
+
+
+
+
+
+// Fallidos
+
+const StyledImgProjectsDesktop = styled.img`
+    width: 100%; 
+    height: 464px;
+    /* margin: 0px 16px; */
+    @media (min-width: 1600px){
+        width: 100%;
+        margin: 0px;
+    }
 `
 const StyledCardsProjectsDesktop = styled(Card)`
     position: absolute;
     width: 510px;
     height: 300px;
     margin-top: 150px;
+    /* @media (min-width: 1600px){
+        left: 100px;
+    } */
 `
 
 const StyledContainerProjectOneDesktop = styled.div`
     display: flex; 
-    justify-content: center; 
     margin: 0 72px;
+    justify-content: flex-start;
+    @media (min-width: 1400px){
+        margin: 0px 125px;
+        justify-content: flex-start;
+    }
+    @media (min-width: 1600px){
+        justify-content: flex-start;
+    }
 `
 
 const StyledContainersProjectsSecondaryDesktop = styled.div`
     display: flex; 
     justify-content: center; 
     margin: 56px 72px;
+    @media (min-width: 1400px){
+        margin: 56px 125px;
+    }
 `
 
 const StyledCardDesktopMainProject = styled(Card)`
@@ -240,7 +357,17 @@ const StyledCardDesktopMainProject = styled(Card)`
         margin-right: 600px;
         margin-top: 200px;
     }
-    @media (min-width: 1300px){
-        margin-right: 625px;
+    @media (min-width: 1600px){
+        left: 100px;
+    }
+`
+
+const StyledImgMainDesktop = styled.img`
+    width: 1222px; 
+    height: 540px;
+    @media (min-width: 1400px){
+        width: 100%; 
+        height: 600px; 
+        justify-content: flex-start;
     }
 `

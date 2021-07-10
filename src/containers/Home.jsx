@@ -32,7 +32,7 @@ const StyledTitleGeneralH1 = styled.h1`
     font-weight: 400; 
     line-height: 40px;
     color: #ffffff; 
-    margin: 15px 0px;
+    /* margin: 15px 0px; */
 `
 
 const StyledDescriptionContainerP = styled.p`
@@ -95,7 +95,7 @@ const Home = ({hello, name, description, direction}) => {
                     </StyledTitleGeneralH1>
                     <StyledDescriptionContainerP >{description}</StyledDescriptionContainerP>
                     <div>
-                        <FaArrowDown style={{ fontSize: '56px', marginTop: '20px', color: '#00b4d8' }} />
+                        <FaArrowDown style={{ fontSize: '56px', marginTop: '40px', color: '#00b4d8' }} />
                     </div>
                 </StyledSecondContainerDiv>
             </div>
