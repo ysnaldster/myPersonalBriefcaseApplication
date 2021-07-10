@@ -95,7 +95,7 @@ const Home = ({hello, name, description, direction}) => {
                     </StyledTitleGeneralH1>
                     <StyledDescriptionContainerP >{description}</StyledDescriptionContainerP>
                     <div>
-                        <FaArrowDown style={{ fontSize: '56px', marginTop: '40px', color: '#00b4d8' }} />
+                        <FaArrowDown style={{ fontSize: '56px', marginTop: '10px', color: '#00b4d8' }} />
                     </div>
                 </StyledSecondContainerDiv>
             </div>
